@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    
+
+  
+<div class="container">
+  <div class="position-relative">
+    <img src="{% static 'bpage/image/MT.jpg' %}" class="img-fluid" alt="...">
+    <div class="position-absolute bottom-0 start-50 fs-5 text text-white translate-middle-x">Mount St. Helens, WA</div>
+  </div>
+
+</div>
+
+
+
+
+
+  <div class="container mt-2">
+    <div class="row ">
+      <div class="col-12 col-lg-6">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'bpage/image/fo1.jpg' %}" class="rounded d-block img-fluid mx-auto" height="600"  alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'bpage/image/fo2.jpg' %}" class="rounded d-block img-fluid mx-auto" height="600"  alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'bpage/image/fo3.jpg' %}" class="rounded d-block img-fluid mx-auto" height="600"  alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'bpage/image/fo4.jpg' %}" class="rounded d-block img-fluid mx-auto" height="600"  alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <p class="fs-5 text text-center lh-base mt-3">One of the recent project.</p>
+        <p class="fs-5 text text-center lh-base mt-1">Fotovoltaic installation on Lumag production plant. Total power 1.24 MWp. 4000 panels.</p>
+        <p class="fs-5 text text-center lh-base mt-1">Produced energy mainly will be consumed in the production porcess.</p>
+        <p class="fs-5 text text-center mt-5">Role: Project manager.</p>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+
+
+  {% endblock %}
+
