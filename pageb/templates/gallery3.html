@@ -5,7 +5,7 @@
 {% block content %}
 
 <p class="fs-5 text text-center mt-5">Ecommerce type gallery </p>
-<p class="fs-5 text text-center mt-5">Django database sqlite + Bootrstrap carousel.</p>
+<p class="fs-5 text text-center mt-5">Django database sqlite3 + Bootrstrap carousel.</p>
   
   <!--Ecommerse gallery-->
   <div class="container">
@@ -19,7 +19,7 @@
             {% for product in products %}
       
             <div class="carousel-item {% if forloop.first %} active {% endif %}">
-              <img src="{{ product.image.url }}" class="rounded d-block img-fluid mx-auto" height="600"  alt="...">
+              <img src="{{ product.image.url }}" class="rounded d-block img-fluid mx-auto" height="600" data-bs-target="#carouselExampleSlidesOnly1" data-bs-slide-to="{{ forloop.counter0 }}"  alt="...">
             </div>
             
             {% endfor %}

@@ -8,12 +8,12 @@
 
 
 <p class="fs-5 text text-center mt-5">Ecommerce type gallery </p>
-<p class="fs-5 text text-center mt-5">Django database sqlite + Bootrstrap carousel + modal window + carousel with custom controll buttons.</p>
+<p class="fs-5 text text-center mt-5">Django database sqlite3 + Bootrstrap carousel + modal window + carousel with custom controll buttons.</p>
 
 
 
   <div class="container mt-5">
-    <div class="row ">
+    <div class="row">
       <div class="col-6 col-md-5 col-lg-4 col-xl-3 ">
 
         <!--Carousel-->
@@ -24,7 +24,7 @@
               {% for product in products %}
         
               <div class="carousel-item {% if forloop.first %} active {% endif %}">
-                <img src="{{ product.image.url }}" class="rounded d-block img-fluid mx-auto" height="600"  alt="...">
+                <img src="{{ product.image.url }}" class="rounded d-block img-fluid mx-auto" height="600"  data-bs-target="#carouselExampleSlidesOnly1" data-bs-slide-to="{{ forloop.counter0 }}" alt="...">
               </div>
               
               {% endfor %}
@@ -32,9 +32,9 @@
             </div>
           </a>
           <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
-            <img src="{% static 'bpage/img/arrow_left7.png' %}"  class="rounded opacity-25" width="30px" alt="..."></a>
+            <img src="{% static 'bpage/images/arrow_left7.png' %}"  class="rounded opacity-25" width="30px" alt="..."></a>
           <a class="carousel-control-next" href=#carouselExampleSlidesOnly"  data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
-            <img src="{% static 'bpage/img/arrow_right7.png' %}"  class="rounded opacity-25" width="30px" alt="..."></a>
+            <img src="{% static 'bpage/images/arrow_right7.png' %}"  class="rounded opacity-25" width="30px" alt="..."></a>
         </div>
         
       </div>
@@ -98,9 +98,9 @@
         
             </div>
             <a class="carousel-control-prev" href="#carouselExampleSlidesOnly1" data-bs-target="#carouselExampleSlidesOnly1" data-bs-slide="prev">
-              <img src="{% static 'bpage/img/arrow_left7.png' %}"  class="rounded opacity-25" width="30px" alt="..."></a>
+              <img src="{% static 'bpage/images/arrow_left7.png' %}"  class="rounded opacity-25" width="50px" alt="..."></a>
             <a class="carousel-control-next" href=#carouselExampleSlidesOnly1  data-bs-target="#carouselExampleSlidesOnly1" data-bs-slide="next">
-              <img src="{% static 'bpage/img/arrow_right7.png' %}"  class="rounded opacity-25" width="30px" alt="..."></a>
+              <img src="{% static 'bpage/images/arrow_right7.png' %}"  class="rounded opacity-25" width="50px" alt="..."></a>
           </div>
           </div>
         </div>
