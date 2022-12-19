@@ -6,7 +6,7 @@
 .higuys {
   position: relative;
   animation-name: animation1;
-  animation-duration: 1s;
+  animation-duration: 4;
 }
 .myname {
   position: relative;
@@ -16,7 +16,7 @@
 .name {
   position: relative;
   animation-name: animation3;
-  animation-duration: 4s;
+  animation-duration: 10s;
 }
 @keyframes animation1 {
   0%   {background-color:transparent; left:-500px; top:0px;}
@@ -28,9 +28,9 @@
 }
 @keyframes animation3 {
 
-  0%    {background-color:transparent; left:-500px; top:0px;}
+  0%    {background-color:transparent; left:-200px; top:0px;}
   25%   {background-color:transparent; left:-500px; top:0px;}
-  60%   {background-color:transparent; left: 100px; top:0px;}
+  50%   {background-color:transparent; left: 300px; top:0px;}
   100%  { background-color:transparent; left:00px; top:0px;}
 }
 
