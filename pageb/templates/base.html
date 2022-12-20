@@ -63,32 +63,34 @@ href="{% static 'web/css/bootstrap.min.css' %}"/>
 
   <div class="container mt-2 bg-dark">
     <div class="row">
-      <div class="col-12 col-lg-6 justify-content-center mt-3">
-
+      <div class="d-flex content_text  justify-content-center">
         <form action="" method="POST"> {% csrf_token %}
           
           <div class="fs-6 text-white">Subject</div>
-          <input type ="text" name="subject" >
+          <input type ="text" name="subject" style="width: 60vw">
           
           <div class="fs-6 text-white">Message</div>
-          <textarea name="message" cols="30" rows="3"></textarea>
+          <textarea name="message" style="width: 60vw" rows="3"></textarea>
             
           <div class="fs-6 text-white">Email</div>                                            
-          <input type="text" name="from_email">
+          <input type="text" name="from_email" style="width: 60vw">
 
           <div class="submit-button-wrapper"> 
           <input type="submit" value="Send Message" />    
           </div> 
-
+          
         </form>
       </div>
-      <div class="col-12 col-lg-6 mt-3">
+      <div class="col-12 d-flex justify-content-center mt-3 ">
         <p class="fs-6 text-white mt-3"> Mariusz Turek profile on <a href="https://www.linkedin.com/in/mariusz-turek-39214a71/ ">Linked in</a></p>
-        <p class="fs-6 text-white mt-3">email: turekpython@gmail.com</p>
-        <p class="fs-6 text-white">phone: 0048 795 814 298</p>
-
-
       </div>
+      <div class="col-12 d-flex justify-content-center mt-3 ">
+        <p class="fs-6 text-white mt-3"> email:turekpython@gmail.com</a></p>
+      </div>
+      <div class="col-12 d-flex justify-content-center mt-3 ">
+        <p class="fs-6 text-white mt-3"> telefon: +48 795814298</a></p>
+      </div>
+    </div>
     </div>
   </div>
 
