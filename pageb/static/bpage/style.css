@@ -7,6 +7,7 @@
   position: relative;
   animation-name: animation1;
   animation-duration: 1s;
+  margin-top: 50px;
 }
 .myname {
   position: relative;

@@ -12,7 +12,9 @@
 <div class="container-lg">
   <div class="position-relative">
     <img src="{% static 'bpage/images/MT.jpg' %}" class="img-fluid" alt="...">
-    <div class="position-absolute bottom-0 start-50 fs-5 text text-white translate-middle-x">Mount St. Helens, WA</div>
+    <div class="position-absolute bottom-0 start-50 fs-5 text text-white translate-middle-x d-none d-sm-block">Mount St. Helens, WA</div>
+    <div class="position-absolute bottom-0 start-50 text text-white translate-middle-x d-block d-sm-none" style="font-size: 2.0vw;">Mount St. Helens, WA</div>
+
     <div class="container position-absolute top-50" style="margin-top: -40px;">
       <div class="row">
         <div class="col-sm-4 col-3 offset-md-1  text-center text-white d-none d-sm-block" style="font-size: 2.0vw;">
@@ -20,9 +22,9 @@
           <p class = "myname">My name is </p>
           <p class = "name">Mariusz Turek</p>
         </div>
-        <div class="col-4 offset-1 offset-md-3 text-center text-white d-block d-sm-none" style="font-size: 3.0vw;">
+        <div class="col-4 offset-1 mt-3 offset-md-3 text-center text-white d-block d-sm-none" style="font-size: 3.0vw;">
           <p class ="higuys">Hi guys!</p> 
-          <p class = "myname">My name </p>
+          <p class = "myname">My name is</p>
           <p class = "name">Mariusz Turek</p>
         </div>
       </div>
@@ -39,7 +41,7 @@
 
     <div class="col-12 col-lg-6">
       <a href="https://mariusztp127.pythonanywhere.com ">
-        <img src="{% static 'bpage/images/higuys.jpg' %}" class="rounded d-block img-fluid mx-auto mb-3" height="600"  alt="...">
+        <img src="{% static 'bpage/images/higuys.jpg' %}" class="rounded d-block img-fluid mb-3" height="600"  alt="...">
       </a>
 
     </div>
