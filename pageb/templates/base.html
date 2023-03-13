@@ -61,33 +61,43 @@ href="{% static 'web/css/bootstrap.min.css' %}"/>
 
   {% endblock %}
 
-  <div class="container mt-2 bg-dark">
+  <div class="container bg-dark">
+    <div class=" d-flex content_text  justify-content-center">
+      <h1 class="fs-1 pt-5 pb-5 text text-center">Skontaktuj sie z nami</h1>
+    </div>
     <div class="row">
-      <div class="col-12 col-lg-6 justify-content-center mt-3">
+      <div class="d-flex content_text  justify-content-center">
         <form action="" method="POST"> {% csrf_token %}
           
           <div class="fs-6 text-white">Subject</div>
-          <input type ="text" name="subject"  style="width: 25em">>
+          <input type ="text" name="subject" style="width: 60vw">
           
           <div class="fs-6 text-white">Message</div>
-          <textarea name="message"  style="width: 25em" rows="3"></textarea>
+          <textarea name="message" style="width: 60vw" rows="3"></textarea>
             
           <div class="fs-6 text-white">Email</div>                                            
-          <input type="text" name="from_email"  style="width: 25em">>
+          <input type="text" name="from_email" style="width: 60vw">
 
           <div class="submit-button-wrapper"> 
           <input type="submit" value="Send Message" />    
           </div> 
-
+          
         </form>
       </div>
-      <div class="col-12 col-lg-6 mt-3">
+      <div class="col-12 d-flex justify-content-center mt-3 ">
+
         <p class="fs-6 text-white mt-3"> Mariusz Turek profile on <a href="https://www.linkedin.com/in/mariusz-turek-39214a71/ ">Linked in</a></p>
-        <p class="fs-6 text-white mt-3">email: turekpython@gmail.com</p>
-        <p class="fs-6 text-white">phone: 0048 795 814 298</p>
+      </div>
+      <div class="col-12 d-flex justify-content-center mt-3 ">
+        <p class="fs-6 text-white mt-3">email: turekpython@gmail.com</a></p>
+      </div>
+      <div class="col-12 d-flex justify-content-center mt-3 ">
+        <p class="fs-6 text-white mt-3"> telefon: +48 795814298</a></p>
       </div>
     </div>
   </div>
+
+
 
  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
