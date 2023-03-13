@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from pageb.views import base, main, gallery1, gallery2, gallery3, gallery4, gallery5
+from pageb.views import base, main, gallery2
 
 from django.conf.urls.static import static
 from django.conf import settings
@@ -25,11 +25,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('base', base, name='base'),
     path('', main, name='main'),
-    path('g1', gallery1, name='gallery1'),
-    path('g2', gallery2, name='gallery2'),
-    path('g3', gallery3, name='gallery3'),
-    path('g4', gallery4, name='gallery4'),
-    path('g5', gallery5, name='gallery5'),
+    #path('g1', gallery1, name='gallery1'),
+    path('g2', gallery2, name='gallery'),
+    #path('g3', gallery3, name='gallery3'),
+    #path('g4', gallery4, name='gallery4'),
+    #path('g5', gallery5, name='gallery5'),
 
 ]
 

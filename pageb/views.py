@@ -32,31 +32,32 @@ def main(request):
 
     return render(request, 'index.html')
 
-
-    
-
-def gallery1(request):
-    products = Gallery1.objects.all()
-    context = {'products': products}
-    return render(request, 'gallery1.html', context)
-
 def gallery2(request):
     return render(request, 'gallery2.html')
 
-def gallery3(request):
+    
+
+""" def gallery1(request):
+    products = Gallery1.objects.all()
+    context = {'products': products}
+    return render(request, 'gallery1.html', context) """
+
+
+
+""" def gallery3(request):
     products = Image3.objects.all()
     context = {'products': products}
     return render(request, 'gallery3.html', context)
-
-def gallery4(request):
+ """
+""" def gallery4(request):
     products = Image3.objects.all()
     context = {'products': products}
-    return render(request, 'gallery4.html', context)
+    return render(request, 'gallery4.html', context) """
 
-def gallery5(request):
+""" def gallery5(request):
     products = Image3.objects.all()
     context = {'products': products}
-    return render(request, 'gallery5.html', context)
+    return render(request, 'gallery5.html', context) """
 
 
    
