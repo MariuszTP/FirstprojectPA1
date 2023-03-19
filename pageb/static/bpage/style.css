@@ -13,12 +13,14 @@
   position: relative;
   animation-name: animation2;
   animation-duration: 3s;
+  
 }
 .name {
   position: relative;
   animation-name: animation3;
   animation-duration: 4s;
 }
+
 @keyframes animation1 {
   0%   {background-color:transparent; left:-500px; top:0px;}
   100%  {left:00px; top:0px;}
@@ -34,6 +36,46 @@
   60%   {background-color:transparent; left: 100px; top:0px;}
   100%  { background-color:transparent; left:00px; top:0px;}
 }
+
+.higuysa {
+  position: absolute;
+  animation-name: animation4;
+  animation-duration: 1s;
+  margin-top: 30px;
+
+}
+.mynamea {
+  position: absolute;
+  animation-name: animation5;
+  animation-duration: 3s;
+  margin-top: 50px;
+
+}
+.namea {
+  position: relative;
+  animation-name: animation6;
+  animation-duration: 4s;
+  margin-top: 70px;
+
+
+}
+
+@keyframes animation4 {
+  0%   {background-color:transparent; left:-200px; top:0px;}
+  100%  {left:00px; top:0px;}
+} 
+@keyframes animation5 {
+  0%   {background-color:transparent; left:-200px; top:0px;}
+  100%  { left:00px; top:0px;}
+}
+@keyframes animation6 {
+
+  0%    {background-color:transparent; left:-200px; top:0px;}
+  25%   {background-color:transparent; left:-200px; top:0px;}
+  60%   {background-color:transparent; left: 100px; top:0px;}
+  100%  {background-color:transparent; left:0px; top:0px;}
+}
+
 
 .one {
   position: absolute;
